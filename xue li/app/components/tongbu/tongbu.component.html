@@ -1,0 +1,32 @@
+<div class='container'>
+  <ul>
+    <li *ngFor="let course of courses">
+      <a [routerLink]="['/tongbudetail',course.id]">
+        <img id='pic' src='{{course.images}}' alt=''>
+        <h3 [ngStyle]="{'color':'black','font-size':'10px'}">{{course.courseName}}</h3>
+        <div>
+           <span id='span1'>
+             <img src='assets/images/tongbu/1.png'>
+             {{course.task}}
+            </span>
+           <span id='span2'>
+              <img src='assets/images/tongbu/2.png'>
+             {{course.person}}
+            </span>
+           <button>申请</button>
+        </div>
+      </a>
+    </li>
+</ul>
+
+</div>
+
+<!-- 
+  tongbu works!
+</p>
+<h2>
+  {{courseId}}
+</h2>
+<button (click)="go()">
+  跳转到社区
+</button> -->

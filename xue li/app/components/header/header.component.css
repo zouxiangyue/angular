@@ -1,0 +1,48 @@
+nav{
+    height:50px;
+    background-color: #f7f7f7;
+    margin:0 auto;
+}
+img, button{
+    cursor: pointer;
+}
+.nav{
+    width:500px;
+    margin:0px;
+    line-height:50px;
+    float:left;
+}
+.nav li{
+    float:left;
+    margin:0 30px;
+    cursor:pointer;
+    list-style: none
+}
+nav #logo{
+    margin-left:180px;
+    margin-top:5px;
+    float:left;
+}
+nav input{
+    border:#aaa;
+    background-color: #fff;
+    height:25px;
+    padding-left:10px;
+    float:left;
+    margin-top:10px;
+}
+nav button{
+    height:25px;
+    width:50px;
+    background-color: #aaa;
+    float:left;
+    margin-top:10px;
+}
+#img1{
+    margin-left:10px;
+    margin:10px;
+    float:left;
+}
+#img2{
+    margin-top:5px
+}

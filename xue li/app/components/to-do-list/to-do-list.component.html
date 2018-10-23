@@ -1,0 +1,41 @@
+
+    ToDoList
+    <input (keydown)="getValue($event)" type='text'  [(ngModel)]='txt'>
+    <!-- <h1>正在进行</h1> -->
+    <!-- <ul >
+        <li *ngFor='let item of arr;let i=index'>
+          <div *ngIf="!item.done">
+             <input  type='checkbox' (click)='change(i)'>{{item.title}}
+             <button (click)='delete(i)'>删除</button>
+          </div>
+        </li>
+    </ul>
+    <h1>已经完成</h1>
+    <ul >
+        <li *ngFor='let item of arr;let i=index'>
+          <div *ngIf="item.done">
+             <input  type='checkbox' (click)='change(i)'>{{item.title}}
+             <button (click)='delete(i)'>删除</button>
+          </div>
+        </li>
+    </ul> -->
+    <h1>正在进行<span>{{arr.length-counter}}</span></h1>
+    <ul >
+      <!-- ng-container 既不是一个 Component ，也不是一个 Directive ，只是单纯的一个特殊 tag --> 
+      <ng-container *ngFor='let item of arr;let i=index'>
+        <li *ngIf="!item.done">
+             <input  type='checkbox' (click)='change(i)'>{{item.title}}
+             <button (click)='delete(i)'>删除</button>
+        </li>
+      </ng-container>
+    </ul>
+    <h1>已经完成<span>{{counter}}</span></h1>
+    <ul >
+        <ng-container *ngFor='let item of arr;let i=index'>
+          <li *ngIf="item.done">
+               <input  type='checkbox' (click)='change(i)'>{{item.title}}
+               <button (click)='delete(i)'>删除</button>
+          </li>
+        </ng-container>
+    </ul>
+    

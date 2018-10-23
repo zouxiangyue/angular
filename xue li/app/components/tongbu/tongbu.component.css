@@ -1,0 +1,42 @@
+*{
+    color:black;
+}
+img,button{
+    cursor: pointer;
+}
+.container{
+    width:1000px;
+    margin-left:180px
+}
+.container li{
+    width:230px;
+    float:left;
+    margin-right: 6px;
+    border:solid 1px #ccc;
+    margin-bottom: 5px
+}
+ul{
+    list-style-type: none;
+}
+ul #pic{
+    width:230px;
+    height:120px;
+}
+span{
+    width:50px;
+    height:30px;
+    color:gray;
+    font-size:10px;
+    margin:5px;
+}
+span img{
+    margin-top:4px;
+}
+button{
+    background-color: #ff6e3d;
+    float:right;
+    width:50px;
+    height:25px;
+    border:0px;
+    margin:5px;
+}
